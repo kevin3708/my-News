@@ -5,7 +5,7 @@ A flask news application that dispalys articles on various categories such as sp
 ## Description
 The application consumes the NEWS API to display various articles on select categories.
 
-## Live link
+## [Live link] (https://damp-hollows-38299.herokuapp.com/)
 
 ## Getting started
 The user is required to clone this repository and its content code into their local machine and 'cd' into the folder. They are then to activate their virtual environment($ source virtual/bin/activate). After activating the virtual environment they are to install all the requirements by running '$ pip install -r requirements.txt', then they can run 'python3 manage.py server' to serve the application.
