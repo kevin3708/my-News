@@ -1,0 +1,26 @@
+{% macro displayNewsList(news_list) %}
+<div class="container-fluid">
+    <div class ="card-columns">
+        {% for news in news_list %} 
+            <div class="card">
+                
+                    <div class="card-header">
+                     <h2 class="card-header">{{news.title}}</h2>
+                    
+                    </div>
+                
+                    <div class="card-body">
+                        <p>{{news.description}}</p>
+                        <img src="{{ news.image }}" alt="{{ news.name }} poster" class="img-responsive" style="height:350px">
+                       
+                    </div>
+
+                 <a target="_blank" href="{{news.url}}"><button class="btn btn-primary">Visit</button></a>
+            </div>
+    </div>
+    
+        {% endfor %}
+
+</div>
+
+{% endmacro %}
